@@ -8,8 +8,26 @@ public class Movie {
     private String Actors;
 
     public static String getAPISearchString(String str) {
-        String searchString = "https://www.omdbapi.com/?t=" + str.replaceAll("\\s", "+") + "&apikey=e88d2fb1";
-        return searchString;
+        return "https://www.omdbapi.com/?t=" + str.replaceAll("\\s", "+") + "&apikey=e88d2fb1";
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+    public String getYear() {
+        return Year;
+    }
+
+    public String getGenre() {
+        return Genre;
+    }
+
+    public String getDirector() {
+        return Director;
+    }
+
+    public String getActors() {
+        return Actors;
     }
 
     @Override
@@ -22,4 +40,5 @@ public class Movie {
                 ", Actors='" + Actors + '\'' +
                 '}';
     }
+
 }
