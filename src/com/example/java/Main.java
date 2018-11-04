@@ -18,11 +18,14 @@ public class Main {
         String dataTarget = "files/data.json";
         // convert the movie title to a search string URL
         String dataSource = Movie.getAPISearchString(title);
-        // make the connection to OMDb using the search string
+        // create a URL connection to the OMDb using the search string
         URL connect = new URL(dataSource);
-        // create a URLConnection object to get the content
+        // create a URLConnection object to get the content from the OMBd
+        // and open a connection
         URLConnection OMDbCon = connect.openConnection();
 
+        // create a buffered reader object to get an input stream from the connection and
+        // write it to the the file for eventual parsing
         try (
              BufferedReader in = new BufferedReader(new InputStreamReader(OMDbCon.getInputStream()));
              FileWriter fw = new FileWriter(dataTarget)

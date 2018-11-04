@@ -14,15 +14,13 @@ Milestones
 
 Technical Breakdown
 -	User enters the movie title.
--	getAPISearchString() converts the movie title into a OMDb search string.
--	
+-	getAPISearchString() converts the movie title into a OMDb search string URL.
+-	Creates a URL connection to the database and opens the connection.
+-	Creates an input stream to the data file
+-	Writes to the data file in JSON format for eventual parsing
 
 API Information
-The OMDb API is used to obtain movie information. Data queries via internet browswer are made in this format: http://www.omdbapi.com/?t=[Movie+Title]&apikey=[users API key].
+The OMDb API is used to obtain movie information. Data queries via internet browser are made in this format: http://www.omdbapi.com/?t=[Movie+Title]&apikey=[users API key].
 For example, a search for “Saving Private Ryan is: http://www.omdbapi.com/?t=Saving+Private+Ryan&apikey=e88d2fb1
-The data is returned in either JSON or XML format. 
-
-
-
-
+The data is returned in JSON format. XML format is optional. 
 
