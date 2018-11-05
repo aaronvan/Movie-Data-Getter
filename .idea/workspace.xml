@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b559c518-87ad-433c-ab7a-505448609525" name="Default Changelist" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/model/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/java/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/java/model/Movie.java" afterDir="false" />
-    </list>
+    <list default="true" id="b559c518-87ad-433c-ab7a-505448609525" name="Default Changelist" comment="Update" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="57" />
     <option name="y" value="24" />
     <option name="width" value="1507" />
@@ -151,7 +145,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541436595730" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541437267121" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -207,7 +201,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1507" height="920" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2398065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
