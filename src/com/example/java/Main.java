@@ -49,11 +49,17 @@ public class Main {
             e.printStackTrace();
         }
 
+        // this block reads the data file and parses the requested information.
+        // creates a Gson instance called gson so you can use Gson methods on it.
         Gson gson = new Gson();
+        // creates a new FileReader called fileReader from the data file
+        // and wraps it in a JsonReader for parsing with Gson methods.
         try (FileReader fileReader = new FileReader("files/data.json");
              JsonReader jsonReader = new JsonReader(fileReader)
             )
         {
+            // declares a Movie object called movie and instantiates it
+            // using the next JSON value from the jsonreader.
             Movie movie = gson.fromJson(jsonReader, Movie.class);
             System.out.println("Movie: " + movie.getTitle());
             System.out.println("Year: " + movie.getYear());
