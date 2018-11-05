@@ -1,20 +1,29 @@
 /* Aaron VanAlstine
-*  Movie Database query tool
-*  November 4, 2018
-*/
+ *  Movie Database query tool
+ *  November 4, 2018
+ */
 
 package com.example.java;
 
 import com.example.java.model.Movie;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
 
+/**
+ * The main class that starts the application
+ */
 public class Main {
 
+    /**
+     * The main method
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         // create a file to hold movie data
         File movieDataFile = new File("files/data.json");
@@ -36,8 +45,7 @@ public class Main {
         // write it to movieDataFile for eventual parsing
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
              FileWriter fileWriter = new FileWriter(movieDataFile)
-            )
-        {
+        ) {
             while (true) {
                 String line = bufferedReader.readLine();
                 if (line == null) {
@@ -56,8 +64,7 @@ public class Main {
         // and wraps it in a JsonReader for parsing with Gson methods.
         try (FileReader fileReader = new FileReader("files/data.json");
              JsonReader jsonReader = new JsonReader(fileReader)
-            )
-        {
+        ) {
             // declares a Movie object called movie and instantiates it
             // using the next JSON value from the jsonreader.
             Movie movie = gson.fromJson(jsonReader, Movie.class);
