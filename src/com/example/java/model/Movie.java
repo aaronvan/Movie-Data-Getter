@@ -6,6 +6,7 @@ public class Movie {
     private String Genre;
     private String Director;
     private String Actors;
+    private String Plot;
 
     public static String getAPISearchString(String str) {
         return "https://www.omdbapi.com/?t=" + str.replaceAll("\\s", "+") + "&apikey=e88d2fb1";
@@ -14,6 +15,7 @@ public class Movie {
     public String getTitle() {
         return Title;
     }
+
     public String getYear() {
         return Year;
     }
@@ -30,6 +32,10 @@ public class Movie {
         return Actors;
     }
 
+    public String getPlot() {
+        return Plot;
+    }
+
     @Override
     public String toString() {
         return "Movie{" +
@@ -38,7 +44,7 @@ public class Movie {
                 ", Genre='" + Genre + '\'' +
                 ", Director='" + Director + '\'' +
                 ", Actors='" + Actors + '\'' +
+                ", Plot='" + Plot + '\'' +
                 '}';
     }
-
 }
