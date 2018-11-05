@@ -1,3 +1,8 @@
+/* Aaron VanAlstine
+*  Movie Database query tool
+*  November 4, 2018
+*/
+
 package com.example.java;
 
 import com.example.java.model.Movie;
@@ -11,8 +16,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+        // create a file to hold movie data
+        File movieDataFile = new File("files/data.json");
+
+        // get the movie title from the user
         Scanner console = new Scanner(System.in);
-        String dataTarget = "files/data.json";
         System.out.print("Enter the movie title: ");
         String title = console.nextLine();
 
@@ -21,13 +29,13 @@ public class Main {
         // create a URL to the OMDb using the search string
         URL url = new URL(dataSource);
         // create a URLConnection object to get the content from the OMBd
-        // and open a connection
+        // and open an Internet connection
         URLConnection urlConnection = url.openConnection();
 
         // create a buffered reader object to get an input stream from the connection and
-        // write it to the the file for eventual parsing
+        // write it to movieDataFile for eventual parsing
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-             FileWriter fileWriter = new FileWriter(dataTarget)
+             FileWriter fileWriter = new FileWriter(movieDataFile)
             )
         {
             while (true) {
@@ -46,17 +54,16 @@ public class Main {
              JsonReader jsonReader = new JsonReader(fileReader)
             )
         {
-                Movie movie = gson.fromJson(jsonReader, Movie.class);
-                System.out.println("Movie: " + movie.getTitle());
-                System.out.println("Year: " + movie.getYear());
-                System.out.println("Genre: " + movie.getGenre());
-                System.out.println("Director: " + movie.getDirector());
-                System.out.println("Actors: " + movie.getActors());
-                System.out.println("Plot: " + movie.getPlot());
+            Movie movie = gson.fromJson(jsonReader, Movie.class);
+            System.out.println("Movie: " + movie.getTitle());
+            System.out.println("Year: " + movie.getYear());
+            System.out.println("Genre: " + movie.getGenre());
+            System.out.println("Director: " + movie.getDirector());
+            System.out.println("Actors: " + movie.getActors());
+            System.out.println("Plot: " + movie.getPlot());
         } finally {
-            // when the program is finished delete the data file
-            File file = new File("files/data.json");
-            file.delete();
+            // delete the data file since it is no longer needed
+            movieDataFile.delete();
         }
     }
 
