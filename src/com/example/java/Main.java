@@ -26,8 +26,7 @@ public class Main {
 
         // create a buffered reader object to get an input stream from the connection and
         // write it to the the file for eventual parsing
-        try (
-             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
              FileWriter fileWriter = new FileWriter(dataTarget)
             )
         {
@@ -43,12 +42,10 @@ public class Main {
         }
 
         Gson gson = new Gson();
-        try {
-            try (
-                FileReader fileReader = new FileReader("files/data.json");
-                JsonReader jsonReader = new JsonReader(fileReader)
-                )
-            {
+        try (FileReader fileReader = new FileReader("files/data.json");
+             JsonReader jsonReader = new JsonReader(fileReader)
+            )
+        {
                 Movie movie = gson.fromJson(jsonReader, Movie.class);
                 System.out.println("Movie: " + movie.getTitle());
                 System.out.println("Year: " + movie.getYear());
@@ -56,7 +53,6 @@ public class Main {
                 System.out.println("Director: " + movie.getDirector());
                 System.out.println("Actors: " + movie.getActors());
                 System.out.println("Plot: " + movie.getPlot());
-            }
         } finally {
             // when the program is finished delete the data file
             File file = new File("files/data.json");
