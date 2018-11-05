@@ -43,18 +43,24 @@ public class Main {
         }
 
         Gson gson = new Gson();
-        try (
-            FileReader fileReader = new FileReader("files/data.json");
-            JsonReader jsonReader = new JsonReader(fileReader)
-            )
-        {
-            Movie movie = gson.fromJson(jsonReader, Movie.class);
-            System.out.println("Movie: " + movie.getTitle());
-            System.out.println("Year: " + movie.getYear());
-            System.out.println("Genre: " + movie.getGenre());
-            System.out.println("Director: " + movie.getDirector());
-            System.out.println("Actors: " + movie.getActors());
-            System.out.println("Plot: " + movie.getPlot());
+        try {
+            try (
+                FileReader fileReader = new FileReader("files/data.json");
+                JsonReader jsonReader = new JsonReader(fileReader)
+                )
+            {
+                Movie movie = gson.fromJson(jsonReader, Movie.class);
+                System.out.println("Movie: " + movie.getTitle());
+                System.out.println("Year: " + movie.getYear());
+                System.out.println("Genre: " + movie.getGenre());
+                System.out.println("Director: " + movie.getDirector());
+                System.out.println("Actors: " + movie.getActors());
+                System.out.println("Plot: " + movie.getPlot());
+            }
+        } finally {
+            // when the program is finished delete the data file
+            File file = new File("files/data.json");
+            file.delete();
         }
     }
 
