@@ -12,10 +12,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner console = new Scanner(System.in);
+        String dataTarget = "files/data.json";
 
         System.out.print("Enter the movie title: ");
         String title = console.nextLine();
-        String dataTarget = "files/data.json";
+
         // convert the movie title to a search string URL
         String dataSource = Movie.getAPISearchString(title);
         // create a URL connection to the OMDb using the search string
@@ -52,6 +53,7 @@ public class Main {
             System.out.println("Genre: " + movie.getGenre());
             System.out.println("Director: " + movie.getDirector());
             System.out.println("Actors: " + movie.getActors());
+            System.out.println("Plot: " + movie.getPlot());
         }
 
     }
