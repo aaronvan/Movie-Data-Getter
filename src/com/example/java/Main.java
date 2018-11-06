@@ -62,7 +62,7 @@ public class Main {
         Gson gson = new Gson();
         // creates a new FileReader called fileReader from the data file
         // and wraps it in a JsonReader for parsing with Gson methods.
-        try (FileReader fileReader = new FileReader("files/data.json");
+        try (FileReader fileReader = new FileReader(movieDataFile);
              JsonReader jsonReader = new JsonReader(fileReader)
         ) {
             // declares a Movie object called movie and instantiates it
