@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MovieFinder:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MovieFinder_jar</output-path>
+    <root id="archive" name="MovieFinder.jar">
+      <element id="module-output" name="MovieFinder" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
