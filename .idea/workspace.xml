@@ -8,7 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b559c518-87ad-433c-ab7a-505448609525" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/Main.class" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/Main.class" afterDir="false" />
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
       <change beforePath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MovieFinder/com/example/java/model/Movie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/java/Main.java" afterDir="false" />
     </list>
@@ -68,14 +72,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1563468306">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="19" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-311">
               <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+=======
+            <state relative-caret-position="476">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
             </state>
           </provider>
         </entry>
@@ -83,8 +115,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/java/model/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="425">
               <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+=======
+            <state relative-caret-position="-107">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
               <folding>
                 <element signature="e#818#819#0" expanded="true" />
                 <element signature="e#846#847#0" expanded="true" />
@@ -111,12 +148,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/example/java/model/movie.java" />
         <option value="$PROJECT_DIR$/files/data.json" />
-        <option value="$PROJECT_DIR$/src/com/example/java/Main.java" />
         <option value="$PROJECT_DIR$/src/com/example/java/model/Movie.java" />
+        <option value="$PROJECT_DIR$/src/com/example/java/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="57" />
     <option name="y" value="24" />
     <option name="width" value="1507" />
@@ -134,6 +171,7 @@
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="MovieFinder" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovieFinder" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -147,6 +185,10 @@
               <item name="MovieFinder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Movie-Data-Getter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Data-Getter" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
             </path>
           </expand>
           <select />
@@ -227,13 +269,18 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23136246" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20975919" />
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293944" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3485868" />
@@ -274,17 +321,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/data.json" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/src/com/example/java/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="method#toString#0;class#Movie#0" />
+          </folding>
+        </state>
+      </provider>
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="425">
           <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="e#818#819#0" expanded="true" />
             <element signature="e#846#847#0" expanded="true" />
             <element signature="method#toString#0;class#Movie#0" />
+=======
+        <state relative-caret-position="476">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 9f6809b3fdcbed1101b7223faf919c0b19b349a7
           </folding>
         </state>
       </provider>
