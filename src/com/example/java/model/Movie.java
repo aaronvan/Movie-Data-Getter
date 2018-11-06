@@ -1,9 +1,5 @@
 package com.example.java.model;
 
-/**
- * The movie class is used to extract the information specified in the class fields
- * from the JSON file.
- */
 public class Movie {
     private String Title;
     private String Year;
@@ -12,11 +8,6 @@ public class Movie {
     private String Actors;
     private String Plot;
 
-    /**
-     * Adds the movie title to a URL string and API key to access the OMDb.
-     * @param str
-     * @return a URL string to make an Internet connection to the OMDb.
-     */
     public static String getAPISearchString(String str) {
         return "https://www.omdbapi.com/?t=" + str.replaceAll("\\s", "+") + "&apikey=e88d2fb1";
     }
