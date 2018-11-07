@@ -25,22 +25,23 @@ public class Main {
 
         String dataSource = Movie.getAPISearchString(title);
         URL url = new URL(dataSource);
-        URLConnection urlConnection = url.openConnection();
+        URLConnection urlCon = url.openConnection();
 
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-             FileWriter fileWriter = new FileWriter(movieDataFile)) {
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));
+             FileWriter fileWriter = new FileWriter(movieDataFile))
+        {
             while (true) {
                 String line = bufferedReader.readLine();
-                if (line == null) {
+                if (line == null)
                     break;
-                }
                 fileWriter.write(line + "\n");
             }
         }
 
         Gson gson = new Gson();
         try (FileReader fileReader = new FileReader(movieDataFile);
-             JsonReader jsonReader = new JsonReader(fileReader)) {
+             JsonReader jsonReader = new JsonReader(fileReader))
+        {
             Movie movie = gson.fromJson(jsonReader, Movie.class);
             System.out.println("Movie: " + movie.getTitle());
             System.out.println("Year: " + movie.getYear());
