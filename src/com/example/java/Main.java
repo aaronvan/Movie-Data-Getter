@@ -28,8 +28,7 @@ public class Main {
         URLConnection urlConnection = url.openConnection();
 
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-             FileWriter fileWriter = new FileWriter(movieDataFile)
-        ) {
+             FileWriter fileWriter = new FileWriter(movieDataFile)) {
             while (true) {
                 String line = bufferedReader.readLine();
                 if (line == null) {
@@ -37,14 +36,11 @@ public class Main {
                 }
                 fileWriter.write(line + "\n");
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
         Gson gson = new Gson();
         try (FileReader fileReader = new FileReader(movieDataFile);
-             JsonReader jsonReader = new JsonReader(fileReader)
-        ) {
+             JsonReader jsonReader = new JsonReader(fileReader)) {
             Movie movie = gson.fromJson(jsonReader, Movie.class);
             System.out.println("Movie: " + movie.getTitle());
             System.out.println("Year: " + movie.getYear());
@@ -52,7 +48,6 @@ public class Main {
             System.out.println("Director: " + movie.getDirector());
             System.out.println("Actors: " + movie.getActors());
             System.out.println("Plot: " + movie.getPlot());
-        } finally {
             movieDataFile.delete();
         }
     }
