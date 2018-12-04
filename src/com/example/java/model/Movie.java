@@ -1,5 +1,9 @@
 package com.example.java.model;
 
+/**
+ * The Movie class created from the returned JSON data
+ */
+
 public class Movie {
     private String Title;
     private String Year;
@@ -8,6 +12,11 @@ public class Movie {
     private String Actors;
     private String Plot;
 
+    /**
+     * This method takes the movie title and returns a search URL
+     * @param str is the movie title
+     * @return a URL with the movie title and users API key
+     */
     public static String getAPISearchString(String str) {
         return "https://www.omdbapi.com/?t=" + str.replaceAll("\\s", "+") + "&apikey=e88d2fb1";
     }
