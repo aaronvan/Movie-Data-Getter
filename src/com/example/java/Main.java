@@ -48,7 +48,6 @@ public class Main {
             System.out.println("Director: " + movie.getDirector());
             System.out.println("Actors: " + movie.getActors());
             System.out.println("Plot: " + movie.getPlot());
-            movieDataFile.delete();
         }
     }
 
