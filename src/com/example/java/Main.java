@@ -17,12 +17,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        File movieDataFile = new File("files/data.json");
-
         Scanner console = new Scanner(System.in);
         System.out.print("Enter the movie title: ");
         String title = console.nextLine();
 
+        File movieDataFile = File.createTempFile("data", "json");
         String dataSource = Movie.getAPISearchString(title);
         URL url = new URL(dataSource);
         URLConnection urlCon = url.openConnection();
