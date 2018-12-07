@@ -1,5 +1,7 @@
 package com.example.java.model;
 
+import org.jetbrains.annotations.Contract;
+
 /**
  * The Movie class created from the returned JSON data
  */
@@ -17,6 +19,7 @@ public class Movie {
      * @param str is the movie title
      * @return a URL with the movie title and users API key
      */
+    @Contract(pure = true)
     public static String getAPISearchString(String str) {
         return "https://www.omdbapi.com/?t=" + str.replaceAll("\\s", "+") + "&apikey=e88d2fb1";
     }
